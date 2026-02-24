@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fadez Barbershop | Premium Cuts in Phoenix, AZ</title>
+    <meta name="description" content="Fresh Fadez Barbershop in Phoenix, AZ specializes in all haircuts and hair types. Walk-ins welcome. Expert barbers with 20+ years experience. Book online today!">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Fresh Fadez Barbershop | Premium Cuts in Phoenix, AZ">
+    <meta property="og:description" content="Professional barbershop specializing in all haircuts and hair types. Walk-ins welcome, great for kids.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madmonk2523.github.io/FreshFadez/">
+    <meta property="og:image" content="https://madmonk2523.github.io/FreshFadez/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Fresh Fadez Barbershop",
+      "image": "https://madmonk2523.github.io/FreshFadez/og-image.jpg",
+      "description": "We are a barbershop that specializes in all haircuts and hair types.",
+      "@id": "https://madmonk2523.github.io/FreshFadez/",
+      "url": "https://madmonk2523.github.io/FreshFadez/",
+      "telephone": "(602) 374-3339",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2637 W Bethany Home Rd",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85017",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.5012,
+        "longitude": -112.1168
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "16:00"}
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/freshfadezbarbershop/",
+        "https://www.facebook.com/freshfadez/"
+      ]
+    }
+    </script>
+    
+    <style>
+        /* ======================
+           CSS VARIABLES & RESET
+           ====================== */
+        :root {
+            --color-charcoal: #1a1a1a;
+            --color-charcoal-light: #2a2a2a;
+            --color-charcoal-lighter: #353535;
+            --color-gold: #d4af37;
+            --color-gold-light: #f0d673;
+            --color-gold-dark: #b8941f;
+            --color-white: #ffffff;
+            --color-white-90: rgba(255, 255, 255, 0.9);
+            --color-white-70: rgba(255, 255, 255, 0.7);
+            --color-white-50: rgba(255, 255, 255, 0.5);
+            --font-primary: 'Inter', sans-serif;
+            --font-display: 'Playfair Display', serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-charcoal);
+            color: var(--color-white-90);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* ======================
+           NAVIGATION
+           ====================== */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .nav.scrolled {
+            background: rgba(26, 26, 26, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: var(--color-gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-logo span {
+            font-size: 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--color-white-90);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-gold);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--color-gold);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-book-nav {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-charcoal);
+            padding: 0.75rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-book-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            z-index: 1001;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-gold);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        
+        /* ======================
+           HERO SECTION
+           ====================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.03;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 35px,
+                rgba(255, 255, 255, 0.1) 35px,
+                rgba(255, 255, 255, 0.1) 70px
+            );
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--color-gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+        
+        .hero-gradient-text {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--color-white-70);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.6s ease-out 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease-out 0.6s both;
+        }
+        
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-charcoal);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-white);
+            border: 2px solid var(--color-white-50);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            transform: translateY(-3px);
+        }
+        
+        /* ======================
+           HIGHLIGHTS SECTION
+           ====================== */
+        .highlights {
+            padding: 5rem 2rem;
+            background: var(--color-charcoal-light);
+        }
+        
+        .highlights-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .highlight-card {
+            background: var(--color-charcoal);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--color-charcoal-lighter);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .highlight-card.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-gold);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-card h3 {
+            color: var(--color-gold);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .highlight-card p {
+            color: var(--color-white-70);
+            font-size: 0.95rem;
+        }
+        
+        /* ======================
+           SECTION SHARED STYLES
+           ====================== */
+        .section {
+            padding: 6rem 2rem;
+        }
+        
+        .section-dark {
+            background: var(--color-charcoal);
+        }
+        
+        .section-light {
+            background: var(--color-charcoal-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .section-header.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .section-subtitle {
+            color: var(--color-gold);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        
+        .section-description {
+            color: var(--color-white-70);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* ======================
+           ABOUT SECTION
+           ====================== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        
+        .about-text.visible {
+            animation: fadeInLeft 0.8s ease-out forwards;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            color: var(--color-white-70);
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .about-features {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--color-charcoal-light);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+        
+        .feature-item:hover {
+            background: var(--color-charcoal-lighter);
+            transform: translateX(8px);
+        }
+        
+        .feature-icon {
+            font-size: 1.8rem;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-text strong {
+            color: var(--color-gold);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .about-image {
+            position: relative;
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        
+        .about-image.visible {
+            animation: fadeInRight 0.8s ease-out forwards;
+        }
+        
+        .about-box {
+            background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+            aspect-ratio: 1;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255, 255, 255, 0.05) 20px,
+                rgba(255, 255, 255, 0.05) 40px
+            );
+        }
+        
+        /* ======================
+           HOURS & MAP SECTION
+           ====================== */
+        .hours-map-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+        }
+        
+        .hours-card {
+            background: var(--color-charcoal-light);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--color-charcoal-lighter);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .hours-card.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .hours-card h3 {
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background: var(--color-charcoal);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        
+        .hours-item:hover {
+            background: var(--color-charcoal-lighter);
+        }
+        
+        .hours-day {
+            font-weight: 600;
+            color: var(--color-white);
+        }
+        
+        .hours-time {
+            color: var(--color-white-70);
+        }
+        
+        .map-card {
+            background: var(--color-charcoal-light);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--color-charcoal-lighter);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .map-card.visible {
+            animation: fadeInUp 0.6s ease-out 0.2s forwards;
+        }
+        
+        .map-card h3 {
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .map-address {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: var(--color-charcoal);
+            border-radius: 12px;
+        }
+        
+        .map-address-icon {
+            font-size: 1.5rem;
+            color: var(--color-gold);
+        }
+        
+        .map-address-text p {
+            color: var(--color-white-90);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        
+        .map-address-text a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .map-address-text a:hover {
+            text-decoration: underline;
+        }
+        
+        .map-embed {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            border: 2px solid var(--color-charcoal-lighter);
+            filter: grayscale(30%) contrast(1.1);
+        }
+        
+        /* ======================
+           REVIEWS SECTION
+           ====================== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .review-card {
+            background: var(--color-charcoal-light);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--color-charcoal-lighter);
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .review-card.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-gold);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .review-author {
+            flex: 1;
+        }
+        
+        .review-author-name {
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .review-meta {
+            color: var(--color-white-50);
+            font-size: 0.85rem;
+        }
+        
+        .review-stars {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+        }
+        
+        .review-text {
+            color: var(--color-white-70);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .review-verification {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px dashed var(--color-gold);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .review-verification-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .review-verification-title {
+            color: var(--color-gold);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .review-verification-text {
+            color: var(--color-white-70);
+            font-size: 0.9rem;
+        }
+        
+        /* ======================
+           FAQ SECTION
+           ====================== */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--color-charcoal-light);
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--color-charcoal-lighter);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .faq-item.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: 1.75rem 2rem;
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            color: var(--color-gold);
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--color-gold);
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-answer-content {
+            padding: 0 2rem 2rem 2rem;
+            color: var(--color-white-70);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* ======================
+           SOCIAL SECTION
+           ====================== */
+        .social-container {
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            background: var(--color-charcoal-light);
+            border-radius: 16px;
+            text-decoration: none;
+            border: 1px solid var(--color-charcoal-lighter);
+            transition: var(--transition);
+            min-width: 200px;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .social-link.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-gold);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .social-icon {
+            font-size: 3rem;
+        }
+        
+        .social-name {
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .social-handle {
+            color: var(--color-white-70);
+            font-size: 0.9rem;
+        }
+        
+        /* ======================
+           FOOTER
+           ====================== */
+        .footer {
+            background: var(--color-charcoal);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid var(--color-charcoal-lighter);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--color-white-70);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: var(--color-gold);
+        }
+        
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--color-gold);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-charcoal-lighter);
+            text-align: center;
+            color: var(--color-white-50);
+            font-size: 0.9rem;
+        }
+        
+        /* ======================
+           FLOATING BOOK BUTTON (Mobile)
+           ====================== */
+        .floating-book {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: none;
+        }
+        
+        .floating-book.visible {
+            display: block;
+            animation: floatingPulse 2s ease-in-out infinite;
+        }
+        
+        .btn-floating {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-charcoal);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* ======================
+           ANIMATIONS
+           ====================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes floatingPulse {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* ======================
+           RESPONSIVE DESIGN
+           ====================== */
+        @media (max-width: 968px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: rgba(26, 26, 26, 0.98);
+                width: 100%;
+                text-align: center;
+                transition: var(--transition);
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                gap: 1.5rem;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hours-map-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .floating-book.visible {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .nav-container {
+                padding: 1rem;
+            }
+            
+            .nav-logo {
+                font-size: 1.4rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .section {
+                padding: 4rem 1rem;
+            }
+            
+            .highlights {
+                padding: 3rem 1rem;
+            }
+            
+            .highlights-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .social-link {
+                width: 100%;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        /* ======================
+           ACCESSIBILITY & FOCUS STATES
+           ====================== */
+        *:focus {
+            outline: 2px solid var(--color-gold);
+            outline-offset: 4px;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: var(--color-charcoal);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- NAVIGATION -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Fresh Fadez Home">
+                <span>💈</span>Fresh Fadez
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#hours" class="nav-link">Hours</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://getsquire.com/booking/book/fresh-fadez-barbershop-phoenix" class="btn-book-nav" target="_blank" rel="noopener noreferrer" aria-label="Book appointment online">Book Now</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+    <section class="hero" id="home" aria-label="Hero section">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-content" id="main-content">
+            <div class="hero-badge">Phoenix's Premier Barbershop</div>
+            <h1>
+                Premium Cuts,<br>
+                <span class="hero-gradient-text">Fresh Styles</span>
+            </h1>
+            <p class="hero-subtitle">
+                Expert barbers specializing in all haircuts and hair types. 
+                20+ years of experience bringing you the freshest fades in Phoenix.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://getsquire.com/booking/book/fresh-fadez-barbershop-phoenix" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Cut</a>
+                <a href="tel:+16023743339" class="btn btn-secondary">📞 Call Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HIGHLIGHTS SECTION -->
+    <section class="highlights" aria-label="Highlights">
+        <div class="highlights-container">
+            <div class="highlight-card" data-animate>
+                <div class="highlight-icon">🚶</div>
+                <h3>Walk-Ins Welcome</h3>
+                <p>No appointment needed. Stop by anytime during business hours.</p>
+            </div>
+            <div class="highlight-card" data-animate>
+                <div class="highlight-icon">👶</div>
+                <h3>Great for Kids</h3>
+                <p>Patient barbers experienced with children's haircuts.</p>
+            </div>
+            <div class="highlight-card" data-animate>
+                <div class="highlight-icon">🚻</div>
+                <h3>Restroom Available</h3>
+                <p>Clean facilities for your convenience.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ABOUT SECTION -->
+    <section class="section section-dark" id="about">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-subtitle">About Us</div>
+                <h2 class="section-title">Masters of the Craft</h2>
+                <p class="section-description">
+                    We are a barbershop that specializes in all haircuts and hair types.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-animate>
+                    <h3>Experience the Difference</h3>
+                    <p>
+                        At Fresh Fadez, we don't just cut hair – we craft confidence. Our team of expert barbers brings decades of combined experience, specializing in everything from classic cuts to modern designs, beard styling, and hair enhancements.
+                    </p>
+                    <p>
+                        Located in the heart of Phoenix, we've built our reputation on precision, attention to detail, and genuine care for every client who walks through our doors.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✂️</div>
+                            <div class="feature-text">
+                                <strong>Expert Cuts</strong>
+                                All styles and hair types
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎨</div>
+                            <div class="feature-text">
+                                <strong>Custom Designs</strong>
+                                Creative patterns and fades
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🧔</div>
+                            <div class="feature-text">
+                                <strong>Beard Styling</strong>
+                                Shape and maintenance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-animate>
+                    <div class="about-box" aria-label="Barbershop icon">
+                        💈
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HOURS & MAP SECTION -->
+    <section class="section section-light" id="hours">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-subtitle">Visit Us</div>
+                <h2 class="section-title">Hours & Location</h2>
+            </div>
+            
+            <div class="hours-map-grid">
+                <div class="hours-card" data-animate>
+                    <h3>Business Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="hours-day">Monday</span>
+                            <span class="hours-time">9 AM – 7 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Tuesday</span>
+                            <span class="hours-time">9 AM – 7 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Wednesday</span>
+                            <span class="hours-time">9 AM – 7 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Thursday</span>
+                            <span class="hours-time">9 AM – 7 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Friday</span>
+                            <span class="hours-time">9 AM – 7 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Saturday</span>
+                            <span class="hours-time">9 AM – 6 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Sunday</span>
+                            <span class="hours-time">10 AM – 4 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-card" data-animate>
+                    <h3>Find Us</h3>
+                    <div class="map-address">
+                        <div class="map-address-icon">📍</div>
+                        <div class="map-address-text">
+                            <p>
+                                <strong>Fresh Fadez Barbershop</strong><br>
+                                2637 W Bethany Home Rd<br>
+                                Phoenix, AZ 85017<br>
+                                <a href="tel:+16023743339">(602) 374-3339</a>
+                            </p>
+                        </div>
+                    </div>
+                    <iframe 
+                        class="map-embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5!2d-112.1168!3d33.5012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzA0LjMiTiAxMTLCsDA3JzAwLjUiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps location of Fresh Fadez Barbershop"
+                        aria-label="Map showing Fresh Fadez Barbershop location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- REVIEWS SECTION -->
+    <section class="section section-dark" id="reviews">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-subtitle">Testimonials</div>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Real reviews from real customers
+                </p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card" data-animate>
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="review-author-name">Chag Esquivel</div>
+                            <div class="review-meta">1 review • 2 months ago</div>
+                        </div>
+                        <div class="review-stars" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">
+                        Prync been cutting my hair for almost 20 years now. Hands down best barber in AZ! He can do it all. Designs, beards, enhancements, etc… Anything you want he can provide the best service possible.
+                    </p>
+                </div>
+                
+                <div class="review-card" data-animate>
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="review-author-name">Don Dada Tra3</div>
+                            <div class="review-meta">1 review • 2 months ago</div>
+                        </div>
+                        <div class="review-stars" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">
+                        Best barbershop in Phoenix . Prync is amazing always on time. Listens to every detail and really cares. Appreciate you prync
+                    </p>
+                </div>
+                
+                <div class="review-card review-verification" data-animate>
+                    <div class="review-verification-icon">⚠️</div>
+                    <div class="review-verification-title">Needs Verification</div>
+                    <div class="review-verification-text">
+                        <strong>Name:</strong> Lorenzo Tuch<br>
+                        <strong>Review count:</strong> William<br>
+                        <strong>Date:</strong> 2 reviews<br>
+                        <strong>Text:</strong> 3 months ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ SECTION -->
+    <section class="section section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-subtitle">FAQ</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do I need an appointment?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No! We accept walk-ins during all business hours. However, if you'd like to guarantee a specific time slot or barber, you can book online through our Squire booking link.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What types of haircuts do you specialize in?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We specialize in all haircuts and hair types! From classic cuts to modern fades, custom designs, beard styling, and hair enhancements. Our experienced barbers can handle any style you're looking for.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you cut children's hair?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely! We're great for kids and have patient barbers experienced with children's haircuts. We create a welcoming environment for clients of all ages.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We accept cash and all major credit cards for your convenience.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Where are you located and is parking available?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We're located at 2637 W Bethany Home Rd, Phoenix, AZ 85017. Parking is available on-site for our customers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SOCIAL SECTION -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-subtitle">Connect</div>
+                <h2 class="section-title">Follow Us</h2>
+                <p class="section-description">
+                    Stay updated with our latest styles and promotions
+                </p>
+            </div>
+            
+            <div class="social-container">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/freshfadezbarbershop/" class="social-link" target="_blank" rel="noopener noreferrer" data-animate aria-label="Follow us on Instagram">
+                        <div class="social-icon">📷</div>
+                        <div class="social-name">Instagram</div>
+                        <div class="social-handle">@freshfadezbarbershop</div>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/freshfadez/" class="social-link" target="_blank" rel="noopener noreferrer" data-animate aria-label="Like us on Facebook">
+                        <div class="social-icon">👍</div>
+                        <div class="social-name">Facebook</div>
+                        <div class="social-handle">/freshfadez</div>
+                    </a>
+                    
+                    <a href="tel:+16023743339" class="social-link" data-animate aria-label="Call us">
+                        <div class="social-icon">📞</div>
+                        <div class="social-name">Phone</div>
+                        <div class="social-handle">(602) 374-3339</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span>💈</span>Fresh Fadez
+                </div>
+                <p>Premium barbershop services in Phoenix, Arizona. Specializing in all haircuts and hair types.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="#hours">Hours & Location</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>2637 W Bethany Home Rd<br>Phoenix, AZ 85017</p>
+                <a href="tel:+16023743339">(602) 374-3339</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Book Now</h4>
+                <a href="https://getsquire.com/booking/book/fresh-fadez-barbershop-phoenix" target="_blank" rel="noopener noreferrer">Online Booking</a>
+                <a href="https://www.instagram.com/freshfadezbarbershop/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/freshfadez/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fresh Fadez Barbershop. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- FLOATING BOOK BUTTON (Mobile) -->
+    <div class="floating-book" id="floatingBook">
+        <a href="https://getsquire.com/booking/book/fresh-fadez-barbershop-phoenix" class="btn-floating" target="_blank" rel="noopener noreferrer" aria-label="Book appointment">
+            <span>📅</span>
+            <span>Book Now</span>
+        </a>
+    </div>
+    
+    <!-- JAVASCRIPT -->
+    <script>
+        // ==================
+        // NAVIGATION
+        // ==================
+        const nav = document.querySelector('.nav');
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        // Sticky navigation on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // Hamburger menu toggle
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Keyboard support for hamburger
+        hamburger.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                hamburger.click();
+            }
+        });
+        
+        // Close menu when clicking nav links
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // ==================
+        // SMOOTH SCROLL
+        // ==================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // ==================
+        // FAQ ACCORDION
+        // ==================
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+        
+        // ==================
+        // INTERSECTION OBSERVER (Animations)
+        // ==================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with data-animate attribute
+        document.querySelectorAll('[data-animate]').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // ==================
+        // FLOATING BOOK BUTTON
+        // ==================
+        const floatingBook = document.getElementById('floatingBook');
+        const hero = document.querySelector('.hero');
+        
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 768) {
+                const heroBottom = hero.offsetTop + hero.offsetHeight;
+                if (window.scrollY > heroBottom) {
+                    floatingBook.classList.add('visible');
+                } else {
+                    floatingBook.classList.remove('visible');
+                }
+            }
+        });
+        
+        // ==================
+        // ACCESSIBILITY: Focus management
+        // ==================
+        document.addEventListener('keydown', (e) => {
+            // Escape key closes mobile menu
+            if (e.key === 'Escape') {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // ==================
+        // PERFORMANCE: Lazy loading for iframe
+        // ==================
+        const mapIframe = document.querySelector('.map-embed');
+        if (mapIframe) {
+            const mapObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Iframe already has src, just observe for analytics
+                        mapObserver.unobserve(entry.target);
+                    }
+                });
+            });
+            mapObserver.observe(mapIframe);
+        }
+    </script>
+</body>
+</html>
