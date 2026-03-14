@@ -1,10 +1,10 @@
 # Fresh Fadez Barbershop 💈
 
-A modern, responsive single-page website for Fresh Fadez Barbershop in Phoenix, Arizona.
+A modern, responsive single-page website for Fresh Fadez Barbershop, an award-winning barber shop in Phoenix, Arizona.
 
 ## 🔥 About Fresh Fadez
 
-Fresh Fadez is a premium barbershop located in Phoenix, AZ, specializing in all haircuts and hair types. With over 20 years of experience, our expert barbers provide exceptional service including:
+Fresh Fadez is an award-winning barber shop located in Phoenix, AZ, specializing in all haircuts and hair types. With over 20 years of experience, our expert barbers provide exceptional service including:
 
 - All haircut styles and types
 - Custom designs and patterns
@@ -50,6 +50,7 @@ Fresh Fadez is a premium barbershop located in Phoenix, AZ, specializing in all 
   - Open Graph tags
   - JSON-LD structured data
   - Semantic HTML
+   - Award-winning barber shop keyword messaging
 - **Sections:**
   - Hero with CTAs
   - Highlights
